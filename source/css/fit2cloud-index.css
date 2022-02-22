@@ -1,0 +1,332 @@
+body {
+    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif;
+}
+p {
+    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC",  sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family:  "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#topnav .navigation-menu > li > a {
+    font-family:  "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", sans-serif;
+    font-weight: 400;
+}
+#topnav .navigation-menu > li .submenu li a {
+    font-weight: 300;
+}
+.home-slider-70 .carousel-item,
+.home-slider-70 .carousel {
+    height: 75vh;
+    width: 100%;
+}
+.title-p {
+    font-size: 0.9rem;
+    /*font-family: 'Nunito', sans-serif;*/
+    line-height: 1.5;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card {
+    background: none;
+}
+.github-star {
+    float: right;
+    padding-top: 27px;
+}
+.carousel-control-next, .carousel-control-prev{
+  width: 8%;
+}
+@media (min-width: 992px) {
+    #topnav .navigation-menu > li .product-submenu:before {
+        left: 350px;
+    }
+    #topnav .navigation-menu > li .product-submenu {
+        /*left: -495px;*/
+        left: -300px;
+    }
+    #topnav .navigation-menu > li .submenu.megamenu {
+        width: 1000px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .header-a {
+        color: white !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        min-height: 0px !important;
+    }
+    .bg-blue {
+        background-color: #0A7BE0 !important;
+    }
+}
+@media (max-width: 991px) {
+    .github-star {
+        float: left;
+        padding: 10px 20px;
+    }
+    #navigation {
+        top: 74px !important;
+    }
+     #topnav .navigation-menu > li .submenu {
+        padding-left: 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    .menu-mt-pnone {
+        margin-top: 0 !important
+    }
+    .title-heading .heading {
+        font-size: 25px !important;
+    }
+    #headerTop {
+        display: none;
+    }
+}
+#headerTop {
+    background-color: #0b0b0b;
+    color: white;
+}
+.subscription-table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.subscription-table th {
+    border: 1px solid #a8a8a8;
+    padding: 10px 0 5px 0;
+    background-color: #4A4A4A;
+    text-align: center;
+    color: white;
+}
+.subscription-table td {
+    border: 1px solid #a8a8a8;
+    padding: 14px 0 14px 10px;
+    background-color: white;
+}
+.subscription-table td:first-child {
+    background-color: #0A7BE0;
+    color: #FFF;
+}
+.table-title-1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+.table-title-2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.td-bg-color {
+    background-color: #f7f7f7 !important;
+    color: #787878;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 60px;
+}
+/* CSS for FIT2CLOUD Nav */
+#f2cnav .logo {
+    line-height: 0rem;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    bottom: -105px !important;
+}
+.explore-feature .icon-size {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.explore-feature .product-text-color {
+    color: #6c757d;
+}
+.explore-feature:hover .bg-js {
+    background-color: #2b937c;
+    color: white !important;
+}
+.explore-feature:hover .bg-ms {
+    background-color: #783887;
+    color: white !important;
+}
+.explore-feature:hover .bg-ko {
+    background-color: #fc6554;
+    color: white !important;
+}
+.explore-feature:hover .bg-f2c {
+    background-color: #0A7BE0;
+    color: white !important;
+}
+.avatar-icon-small {
+    width: 16px;
+}
+.bg-half {
+    padding: 225px 0;
+}
+.customer-bg-half {
+    padding: 90px 0 !important;
+}
+.product-card {
+    background: none;
+    width: 250px !important;
+}
+.card-item {
+    padding: 0.7rem !important
+}
+.my-bg-overlay {
+    background-color: rgba(60, 72, 88, 0.1) !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn-primary,
+.btn-soft-primary,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary.focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    box-shadow: none !important;
+}
+.btn-soft-primary {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.owl-img {
+    display: inline !important;
+    width: 16px !important;
+}
+.my-bg-half{
+    padding: 110px 0 90px;
+}
+.product-all-color {
+    color: black;
+}
+.pro-ms, .pro-ko, .pro-f2c, .pro-js {
+    position: relative;
+    z-index: 1;
+    border-top: 3px solid #adb5bd !important;
+    border-radius: 0 !important;
+    background-color: white !important;
+}
+.pro-ms{
+    border-color: #783887 !important;
+}
+.pro-ko{
+    border-color: #fc6554 !important;
+}
+.pro-f2c{
+    border-color: #0A7BE0 !important;
+}
+.pro-js{
+    border-color: #2b937c !important;
+}
+.pro-ms > a .ms {
+    background-color: #783887 !important;
+    color: white !important;
+}
+.pro-ms h4, .pro-ms i, .pro-ms h4, .pro-ms h5{
+    color: #783887 !important;
+}
+.pro-ko > a .ko {
+    background-color: #fc6554 !important;
+    color: white !important;
+}
+.pro-ko h4, .pro-ko i, .pro-ko h5{
+    color: #fc6554 !important;
+}
+.pro-f2c > a .f2c {
+    background-color: #0A7BE0 !important;
+    color: white !important;
+}
+.pro-f2c h4, .pro-f2c i, .pro-f2c h5{
+    color: #0A7BE0 !important;
+}
+.pro-js > a .js {
+    background-color: #2b937c !important;
+    color: white !important;
+}
+.pro-js h4, .pro-js i, .pro-js h5{
+    color: #2b937c !important;
+}
+.foot-logo {
+    padding-left: 5px;
+    padding-right: 5px
+}
+.foot-logo p {
+    font-size: 12px;
+}
+.cloud-f2c:hover > .f2c {
+    background-color: #28abe3 !important;
+    color: white;
+}
+.operate-f2c {
+   position: relative;
+    z-index: 1;
+    border-top: 3px solid #0A7BE0 !important;
+    border-radius: 0 !important;
+    background-color: white !important;
+}
+.operate-f2c:hover {
+    border-color: #0A7BE0 !important;
+}
+.operate-f2c:hover .f2c {
+    background-color: #0A7BE0 !important;
+    color: white;
+}
+.cloud-card .card-body {
+    padding: 1em !important;
+}
+.foot-card {
+    border-radius: 0em !important;
+}
+.bg-banner {
+    padding: 0 !important;
+}
+.menu-btn {
+    padding: 8px 10px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+.menu-btn2 {
+    padding: 8px 10px !important;
+    font-size: 14px !important;
+    background-color: #0A7BE0 !important;
+}
+.footer-text-color {
+    text-decoration: none !important;
+    color: #0A7BE0 !important;
+}
+.live-font-size {
+    font-size: 15px !important;
+}
+.index-row {
+    margin-top: -150px !important;
+}
+.index-banner-side {
+    font-size: 13px !important;
+    padding-top: -20px !important;
+}
+.home-slider .carousel-item, .home-slider .index-banner {
+    height: 75vh;
+    width: 100%;
+}
+.section-banner1 {
+    padding-top: 100px !important;
+    padding-bottom: 0px !important;
+    position: relative;
+}
+.section-banner2 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    position: relative;
+}

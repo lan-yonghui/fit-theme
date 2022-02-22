@@ -1,17 +1,15 @@
 <#include "module/macro.ftl">
-
-<@layout title="标签: ${tag.name} - ${blog_title!}">
+<@layout title="归档 - ${blog_title!}">
     <#include "module/common-search.ftl">
     <div class="content">
-        <div class="siteforceSldsOneColLayout siteforceContentArea"
-        data-aura-class="siteforceSldsOneColLayout siteforceContentArea">
+        <div class="siteforceSldsOneColLayout siteforceContentArea">
             <div class="slds-col--padded comm-content-header comm-layout-column">
             </div>
             <div class="slds-col--padded contentRegion comm-layout-column">
                 <div data-region-name="content">
                     <div data-priority="" class="ui-widget">
                         <article class="slds-card CoveoV2CommunitySearch cCommunitySearchExternal">
-                            <div class="slds-card">
+                            <div class="slds-card" >
                                 <div class="CoveoV2SearchUI">
                                 </div>
                                 <div class="CoveoV2SearchUI">
@@ -24,11 +22,42 @@
                                                     <#include "module/articles-list.ftl">
                                                     <div class="pagination-section">
                                                         <div class="CoveoResultsPerPage">
+                                                            <#-- <span class="coveo-results-per-page-text">
+                                                                Results per page
+                                                                </span>
+                                                                <ul class="coveo-results-per-page-list">
+                                                                    <li class="coveo-results-per-page-list-item coveo-active coveo-accessible-button"
+                                                                    tabindex="0" role="button" aria-label="Display 10 results per page">
+                                                                        <a class="coveo-results-per-page-list-item-text">
+                                                                            10
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="coveo-results-per-page-list-item coveo-accessible-button" tabindex="0"
+                                                                    role="button" aria-label="Display 25 results per page">
+                                                                        <a class="coveo-results-per-page-list-item-text">
+                                                                            25
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="coveo-results-per-page-list-item coveo-accessible-button" tabindex="0"
+                                                                    role="button" aria-label="Display 50 results per page">
+                                                                        <a class="coveo-results-per-page-list-item-text" name="&amp;lpos=content : 31"
+                                                                        onclick="s_objectID='content : 50 : 31'">
+                                                                            50
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="coveo-results-per-page-list-item coveo-accessible-button" tabindex="0"
+                                                                    role="button" aria-label="Display 100 results per page">
+                                                                        <a class="coveo-results-per-page-list-item-text" name="&amp;lpos=content : 32"
+                                                                        onclick="s_objectID='content : 100 : 32'">
+                                                                            100
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                                -->
                                                         </div>
                                                         <div class="CoveoPager">
-                                                            <@paginationTag method="tagPosts" page="${posts.number}" total="${posts.totalPages}" display="3" slug="${tag.slug!}">
+                                                            <@paginationTag method="search" page="${posts.number}" total="${posts.totalPages}" keyword="${keyword}" display="3">
                                                                 <#if (posts.totalPages==0 )>
-                                                                    
                                                                 <#elseif (posts.totalPages==1 )>
                                                                 <#else>
                                                                     <ul class="coveo-pager-list">
@@ -88,7 +117,7 @@
                                                     <#include "module/no-find.ftl">
                                                 </#if>
                                             </div>
-                                        </div>    
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -96,15 +125,6 @@
                     </div>
                 </div>
             </div>
-            <div class="slds-col--padded comm-content-footer comm-layout-column">
-            </div>
         </div>
     </div>
-</@layout> 
-
-
-
-
-
-
-
+</@layout>

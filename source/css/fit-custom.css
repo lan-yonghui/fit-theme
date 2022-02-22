@@ -1,0 +1,103 @@
+
+
+body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+
+.auraMsgMask, #auraErrorMask, body .auraLoadingBox {
+    display: none;
+}
+
+.spaError {
+    padding: 10px;
+}
+
+.spaErrorLink {
+    padding: 10px 0;
+    display: block
+}
+
+
+
+
+/*------------------------------------*\
+	Typography - do not remove
+\*------------------------------------*/
+@font-face {
+	font-family: "MetropolisLight";
+
+}
+
+@font-face {
+	font-family: "MetropolisBold";
+
+}
+
+@font-face {
+	font-family: "MetropolisMedium";
+
+}
+
+@font-face {
+	font-family: "MetropolisRegular";
+
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MetropolisRegular";
+
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MetropolisRegular";
+
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "MetropolisRegular";
+
+	font-weight: 600;
+	font-style: normal;
+}
+
+/*------------------------------------*\
+	Typography END
+\*------------------------------------*/
+
+/*Adding CSS to keep the Footer component at the bottom of the page*/
+html {
+	position: relative;
+	min-height: 100%;
+}
+/*End*/
+/*Adding CSS specific to Article, Search page*/
+.comm-page-article > .cKM_CustomThemeLayoutMain,
+.comm-page-article > .cKM_CustomThemeLayoutMain:after,
+.comm-page-global-search > .cKM_CustomThemeLayoutMain .innerContainer article {
+	background: #ffffff;
+}
+.comm-page-article > .cKM_CustomThemeLayoutMain .innerContainer article {
+	background: #ffffff;
+	margin-top: 36px;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+
+/* To remove extra passing above search results */
+.content .siteforceContentArea .comm-layout-column {
+	padding: 0 !important;
+}
+/* To remove extra passing above search results */
+.cCommunitySearchExternal header + .slds-card__body {
+	margin-top: 0;
+}
+/* To remove extra passing above search results */
+.cCommunitySearchExternal header {
+	display: none;
+}
+/*End*/
