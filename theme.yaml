@@ -1,6 +1,6 @@
 # 配置详情请参考：https://docs.halo.run/zh/developer-guide/theme/config-files
-id: halo_quickstarter
-name: QuickStarter
+id: fit-theme
+name: FIT2CLOUD
 author:
   name: halo-dev
   website: https://halo.run

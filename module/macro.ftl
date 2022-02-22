@@ -9,22 +9,22 @@
 
         <@global.head />
 
-        <script type="text/javascript" charset="utf-8" src="/themes/fit-theme/source/js/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="${theme_base!}/source/js/jquery.min.js"></script>
 
         <#--  fit2cloud官网  -->
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit2cloud.min.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit2cloud-index.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit2cloud-style.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud.min.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-index.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-style.css" />
         <#--  fit2cloud官网  -->
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit-onetrust.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit-header.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit-footer.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit-articles.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/styles.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit-onetrust.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit-header.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit-footer.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit-articles.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/styles.css" />
         
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/fit-search.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/CoveoFullSearch.css" />
-        <link rel="stylesheet" href="/themes/fit-theme/source/css/app.css">
+        <link rel="stylesheet" href="${theme_base!}/source/css/fit-search.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/CoveoFullSearch.css" />
+        <link rel="stylesheet" href="${theme_base!}/source/css/app.css">
             
         <title>${title}</title>
     </head>
