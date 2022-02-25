@@ -1,11 +1,8 @@
 <script type="text/javascript">
-function formSubmit()
-{
-document.getElementById("myForm").submit()
-}
+
 </script>
 
-<div class="search">
+<div class="">
     <form class="joe_header__above-search" method="get" id="myForm" name=”form” action="${blog_url!}/search">
         <div data-region-name="search">
             <div data-priority="" class="ui-widget">
@@ -52,7 +49,6 @@ document.getElementById("myForm").submit()
                                             </svg>
                                         </span>
                                     </div>
-                                    
                                     <div class="magic-box-input">
                                         <div class="magic-box-underlay">
                                             <span class="magic-box-highlight-container">
@@ -66,8 +62,8 @@ document.getElementById("myForm").submit()
                                             <span class="magic-box-ghost-text">
                                             </span>
                                         </div>
-                                        <input type="text" id="keyword" name="keyword" aria-autocomplete="list" placeholder="Search">
-                                        <div class="magic-box-clear coveo-accessible-button" role="button" aria-label="Clear"
+                                        <input type="text" id="keyword" name="keyword" aria-autocomplete="list" placeholder="搜索关键字、产品或问题..">
+                                        <div class="magic-box-clear coveo-accessible-button coveo-accessible-button-pressed" role="button" aria-label="Clear"
                                         tabindex="-1" aria-hidden="true">
                                             <div class="magic-box-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" class="magic-box-clear-svg">
@@ -93,7 +89,11 @@ document.getElementById("myForm").submit()
                                 </div>
                             </div>
                         </div>
-                        <div class="searchbox-footer-responsive">                            
+                        <div class="searchbox-footer-responsive">
+                            <div id="coveo-queries-history" class="flex align-item-center">
+                            </div>
+                            <div class="searchbox-footer-section">
+                            </div>
                         </div>
                     </div>
                     </form>
@@ -102,7 +102,6 @@ document.getElementById("myForm").submit()
         </div>
     </form>
 </div>
-
 
 
 

@@ -2,11 +2,11 @@
 id: fit-theme
 name: FIT2CLOUD
 author:
-  name: halo-dev
+  name: Fit2cloud
   website: https://halo.run
-description: Quick starter theme for halo
+description: Fit2cloud Knowledge Base
 logo: https://avatars.githubusercontent.com/u/48195280?s=200&v=4
-website: https://github.com/halo-dev/halo-theme-quick-starter
-repo: https://github.com/halo-dev/halo-theme-quick-starter
+website: https://github.com/lan-yonghui/fit-theme
+repo: https://github.com/lan-yonghui/fit-theme
 version: 1.0.0
-require: 1.4.2
+require: 1.5.0

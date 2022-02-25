@@ -22,38 +22,6 @@
                                                     <#include "module/articles-list.ftl">
                                                     <div class="pagination-section">
                                                         <div class="CoveoResultsPerPage">
-                                                            <#-- <span class="coveo-results-per-page-text">
-                                                                Results per page
-                                                                </span>
-                                                                <ul class="coveo-results-per-page-list">
-                                                                    <li class="coveo-results-per-page-list-item coveo-active coveo-accessible-button"
-                                                                    tabindex="0" role="button" aria-label="Display 10 results per page">
-                                                                        <a class="coveo-results-per-page-list-item-text">
-                                                                            10
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="coveo-results-per-page-list-item coveo-accessible-button" tabindex="0"
-                                                                    role="button" aria-label="Display 25 results per page">
-                                                                        <a class="coveo-results-per-page-list-item-text">
-                                                                            25
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="coveo-results-per-page-list-item coveo-accessible-button" tabindex="0"
-                                                                    role="button" aria-label="Display 50 results per page">
-                                                                        <a class="coveo-results-per-page-list-item-text" name="&amp;lpos=content : 31"
-                                                                        onclick="s_objectID='content : 50 : 31'">
-                                                                            50
-                                                                        </a>
-                                                                    </li>
-                                                                    <li class="coveo-results-per-page-list-item coveo-accessible-button" tabindex="0"
-                                                                    role="button" aria-label="Display 100 results per page">
-                                                                        <a class="coveo-results-per-page-list-item-text" name="&amp;lpos=content : 32"
-                                                                        onclick="s_objectID='content : 100 : 32'">
-                                                                            100
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                                -->
                                                         </div>
                                                         <div class="CoveoPager">
                                                             <@paginationTag method="search" page="${posts.number}" total="${posts.totalPages}" keyword="${keyword}" display="3">
