@@ -69,6 +69,28 @@ genernal:
       placeholder: "请填写社区软件许可协议"
       description: "社区软件许可协议将展示在页脚中，不填不展示，也可在 “页脚” 一栏中单独关闭（示例：https://www.fit2cloud.com/legal/licenses.html）"
 
+# 主题
+theme:
+  label: 主题
+  items:
+    index_source:
+      name: index_source
+      label: 首页页面
+      type: select
+      data-type: text
+      default: index
+      description: "设置页脚内容具体来自哪里"
+      options:
+        - value: index
+          label: 默认首页
+        - value: archives
+          label: 文章页
+        # - value: category
+        #   label: 分类页
+        # - value: tag
+        #   label: 标签页
+        # - value: search
+        #   label: 搜索页
 
 # 页眉
 header:

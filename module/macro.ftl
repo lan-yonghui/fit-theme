@@ -35,7 +35,7 @@
             <#nested >
 
             <#--
-                公共底部代码，详情请参考：https://docs.halo.run/developer-guide/theme/public-template-tag
+                公共底部代码，详情请参考：https://docs.halo.run/zh/developer-guide/theme/public-template-tag
                 包含：统计代码，底部信息
             -->
 
