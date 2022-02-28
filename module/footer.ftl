@@ -2,18 +2,6 @@
 <div class="footer">
     <footer>
         <#if settings.footer_source=='both' || settings.footer_source=='theme'>
-            <div id="footer">
-                <footer class="main-footer">
-                    <div _ngcontent-cti-c248="" class="personalization_div_1" style="min-height: 1px;">
-                    </div>
-                    <div _ngcontent-cti-c248="" class="personalization_div_2" style="min-height: 1px;">
-                    </div>
-                    <div _ngcontent-cti-c248="" class="gradient-hr vm-border">
-                    </div>
-                </footer>
-            </div>
-
-
             <div class="app-footer">
                 <div class="footer-top container">
                     <div class="el-row" style="margin-left: -30px; margin-right: -30px;">
@@ -32,20 +20,20 @@
                             </p>
                         </div>
                         <div class="el-col el-col-7" style="padding-left: 30px; padding-right: 30px;">
-                            <h2>
-                                联系我们
-                            </h2>
                             <#if settings.contact_us?? && settings.contact_us?trim!=''>
+                                <h2>
+                                    联系我们
+                                </h2>
                                 <ul>
                                     ${settings.contact_us!}
                                 </ul>
                             </#if>
                         </div>
                         <div class="el-col el-col-6" style="padding-left: 30px; padding-right: 30px;">
-                            <h2>
-                                关注我们
-                            </h2>
                             <#if settings.follow_us?? && settings.follow_us?trim!=''>
+                                <h2>
+                                    关注我们
+                                </h2>
                                 <img src="${settings.follow_us!}" width="150px" alt="">
                             </#if>
                         </div>
@@ -85,11 +73,11 @@
 
             <div id="footer">
                 <footer class="main-footer">
-                    <div _ngcontent-cti-c248="" class="personalization_div_1" style="min-height: 1px;">
+                    <div _ngcontent="" class="personalization_div_1" style="min-height: 1px;">
                     </div>
-                    <div _ngcontent-cti-c248="" class="personalization_div_2" style="min-height: 1px;">
+                    <div _ngcontent="" class="personalization_div_2" style="min-height: 1px;">
                     </div>
-                    <div _ngcontent-cti-c248="" class="gradient-hr vm-border">
+                    <div _ngcontent="" class="gradient-hr vm-border">
                     </div>
                 </footer>
             </div>

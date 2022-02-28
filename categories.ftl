@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@layout title="分类列表 - ${blog_title!}">
+<@layout title="${blog_title!}">
     <h1>分类列表</h1>
     <ul>
         <@categoryTag method="list">

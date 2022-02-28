@@ -1,11 +1,11 @@
-<#--  <#include "module/macro.ftl">
+<#include "module/macro.ftl">
 <@layout title="${blog_title!}">
 	<#include "module/home-search.ftl">
 	<#include "module/latest-articles.ftl">
-</@layout>      -->
+</@layout>    
 
-<#include "module/macro.ftl">
-<@layout title="归档 - ${blog_title!}">
+<#--  <#include "module/macro.ftl">
+<@layout title="${blog_title!}">
 
 <#include "module/common-search.ftl">
 
@@ -104,4 +104,4 @@
 		</div>
 	</div>
 </div>
-</@layout>
+</@layout>  -->

@@ -50,3 +50,83 @@ function initKeyword() {
     }
 }
 initKeyword();
+
+function loadOtherArticle() {
+    var keyword = localStorage.getItem("keyword");
+    var cate = "${(post.categories[0].id)!''}";
+    var tag = "${(post.tags[0].slug)!''}";
+    if (keyword) {
+        this.getArticle("/api/content/posts", "get", { "keyword": keyword, "size": 5 });
+    } else if (cate) {
+        this.getArticle("/api/content/posts", "get", { "categoryId": cate, "size": 5 });
+    } else if (tag) {
+        this.getArticle("/api/content/tags/" + tag + "/posts", "get", { "size": 5 });
+    } else {
+        this.getArticle("/api/content/posts/latest", "get", { "size": 5 });
+    }
+
+}
+
+function getArticle(url, type, data) {
+    $.ajax({
+        url: url,
+        type: type,
+        headers: {
+            "API-Authorization": ThemeConfig.access_key || "fit2cloud",
+        },
+        dataType: "json",
+        data: data,
+        success: function(result) {
+            var str = "";
+            $.each(result.data.content, function(index, key) {
+                str += `<div class="coveo-list-layout CoveoResult">
+                        <div class="flex align-center related-item">
+                        <div class="icon-wrapper">
+                            <div class="CoveoVMwareIcon">`
+                $.each(key.categories, function(index1, cate) {
+                    if (cate && index1 < 1 && cate.thumbnail) {
+                        str += `<span>
+                                    <img src="` + cate.thumbnail + `" height="20" width="20"/>
+                                </span>`
+                    } else {
+                        str += `<span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36"
+                                        height="36" width="36">
+                                            <rect fill="#0091DA" rx="3" height="20" width="20" y="2" x="2">
+                                            </rect>
+                                            <path fill="white" d="M8.132 6.6H13.756L17 9.768V17.036C17.0067 17.4483 16.6802 17.7891 16.268 17.8H8.132C7.71981 17.7891 7.39328 17.4483 7.4 17.036V7.364C7.39328 6.95172 7.71981 6.61091 8.132 6.6ZM13.4 7.336V10.2H16.32L13.4 7.336Z"
+                                            clip-rule="evenodd" fill-rule="evenodd">
+                                            </path>
+                                        </svg>
+                                    </span>`
+                    }
+                })
+                str += `</div>
+                        </div>
+                        <div class="v-align-middle">
+                            <div class="coveo-title">`
+                $.each(key.categories, function(index1, cate) {
+                    if (cate && index1 < 1) {
+                        str += `<span data-field="@commonsource" class="CoveoFieldValue">
+                                <span>
+                                    <a href="` + cate.fullPath + `" target="_blank">
+                                    ` + cate.name + `
+                                    </a>
+                                    </span>
+                                </span>`
+                    }
+                })
+                str += `•
+                            <a class="CoveoResultLink" tabindex="0" role="heading" aria-level="2" href="` + key.fullPath + `" target="_blank">
+                                ` + key.title + `
+                            </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>`
+            })
+            $("#coveo-result-list-container").html(str);
+        }
+    });
+}
+loadOtherArticle();

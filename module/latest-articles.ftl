@@ -14,7 +14,7 @@
 					<div class="cRecommendedArticles">
 						<div class="recommendation-header">
 							<div class="recommendation-title">
-								最新文章
+								最新内容
 							</div>
 						</div>
 						<div class="CoveoV2SearchUI">

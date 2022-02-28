@@ -163,39 +163,6 @@
                     data-auto-select-fields-to-include="false">
                       <div class="coveo-result-list-container coveo-list-layout-container" id="coveo-result-list-container">
                         
-                        <#--  <div class="coveo-list-layout CoveoResult">
-                          <div class="flex align-center related-item">
-                            <div class="icon-wrapper">
-                              <div class="CoveoVMwareIcon">
-                                <span>
-                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36"
-                                  height="36" width="36">
-                                    <rect fill="#1D428A" rx="3" height="20" width="20" y="2" x="2">
-                                    </rect>
-                                    <path fill="white" d="M7.40001 6.6V14.6V15.4H7.00001C6.77909 15.4 6.60001 15.2209 6.60001 15V6.2C6.60001 5.97909 6.77909 5.8 7.00001 5.8H14.2C14.4209 5.8 14.6 5.97909 14.6 6.2V6.6H7.40001ZM9.00001 8.2V16.2V17H8.60001C8.3791 17 8.20001 16.8209 8.20001 16.6V7.8C8.20001 7.57909 8.3791 7.4 8.60001 7.4H15.8C16.0209 7.4 16.2 7.57909 16.2 7.8V8.2H9.00001ZM17.4 9H10.2C9.97909 9 9.8 9.17909 9.8 9.4V18.2C9.8 18.4209 9.97909 18.6 10.2 18.6H17.4C17.6209 18.6 17.8 18.4209 17.8 18.2V9.4C17.8 9.17909 17.6209 9 17.4 9ZM11.4 15.4H16.2V14.6H11.4V15.4ZM16.2 13.8H11.4V13H16.2V13.8ZM11.4 12.2H16.2V11.4H11.4V12.2Z"
-                                    clip-rule="evenodd" fill-rule="evenodd">
-                                    </path>
-                                  </svg>
-                                </span>
-                              </div>
-                            </div>
-                            <div class="v-align-middle">
-                              <div class="coveo-title">
-                                <span data-field="@commonsource" class="CoveoFieldValue">
-                                  <span>
-                                    Docs
-                                  </span>
-                                </span>
-                                •
-                                <a class="CoveoResultLink" tabindex="0" role="heading" aria-level="2"
-                                href="https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.3/vmware-tanzu-kubernetes-grid-13/GUID-troubleshooting-tkg-tips.html"
-                                name="&amp;lpos=content : 18" onclick="s_objectID='content : Troubleshooting Tips for Tanzu Kubernetes Grid : 18'">
-                                  Troubleshooting Tips for Tanzu Kubernetes Grid
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>  -->
                       </div>
                     </div>
                   </div>
@@ -264,91 +231,6 @@
   </article>
 </div>
 
-<script>
-function loadOtherArticle() {
-    var keyword = localStorage.getItem("keyword");
-    var cate = "${(post.categories[0].id)!''}";
-    var tag = "${(post.tags[0].slug)!''}";
-    if(keyword){
-      console.log(1)
-      this.getArticle("/api/content/posts", "get", {"keyword":keyword, "size":5});
-    }else if(cate){
-      console.log(2)
-      this.getArticle("/api/content/posts", "get", {"categoryId":cate, "size":5});
-    }else if(tag){
-      console.log(3)
-      console.log(3)
-      this.getArticle("/api/content/tags/"+tag+"/posts", "get", {"size":5});
-    }else{
-      console.log(4)
-      this.getArticle("/api/content/posts/latest", "get", {"size":5});
-    }
-
-}
-function getArticle(url, type, data){
-  $.ajax({
-            url: url,
-            type: type,
-            headers: {
-                "API-Authorization": ThemeConfig.access_key || "fit2cloud",
-            },
-            dataType: "json",
-            data: data,
-            success: function(result) {
-                var str = "";
-                $.each(result.data.content,function(index,key){
-                  str += `<div class="coveo-list-layout CoveoResult">
-                          <div class="flex align-center related-item">
-                            <div class="icon-wrapper">
-                              <div class="CoveoVMwareIcon">`
-                                $.each(key.categories,function(index1,cate){
-                                  if(cate && index1 < 1 && cate.thumbnail){
-                  str +=            `<span>
-                                        <img src="`+ cate.thumbnail +`" height="20" width="20"/>
-                                    </span>`
-                                  }else{
-                  str +=              `<span>
-                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 36 36"
-                                          height="36" width="36">
-                                              <rect fill="#0091DA" rx="3" height="20" width="20" y="2" x="2">
-                                              </rect>
-                                              <path fill="white" d="M8.132 6.6H13.756L17 9.768V17.036C17.0067 17.4483 16.6802 17.7891 16.268 17.8H8.132C7.71981 17.7891 7.39328 17.4483 7.4 17.036V7.364C7.39328 6.95172 7.71981 6.61091 8.132 6.6ZM13.4 7.336V10.2H16.32L13.4 7.336Z"
-                                              clip-rule="evenodd" fill-rule="evenodd">
-                                              </path>
-                                          </svg>
-                                      </span>`
-                                  }
-                                })
-                  str +=      `</div>
-                            </div>
-                            <div class="v-align-middle">
-                              <div class="coveo-title">`
-                              $.each(key.categories,function(index1,cate){
-                                if(cate && index1 < 1){
-                  str +=          `<span data-field="@commonsource" class="CoveoFieldValue">
-                                    <span>
-                                      <a href="`+ cate.fullPath +`" target="_blank">
-                                      `+ cate.name +`
-                                      </a>
-                                      </span>
-                                  </span>`
-                                }
-                              })
-                  str +=         `•
-                                <a class="CoveoResultLink" tabindex="0" role="heading" aria-level="2" href="`+ key.fullPath +`" target="_blank">
-                                  `+ key.title +`
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>`
-              })
-              $("#coveo-result-list-container").html(str);
-            }
-        });
-}
-loadOtherArticle();
-</script>
 <#include "module/comment.ftl">
 <@comment post=post type="post" />
 </@layout>

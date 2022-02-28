@@ -4,7 +4,7 @@
         <@categoryTag method="list">
             <div class="coveo-facet-header">
                 <div class="coveo-facet-header-title-section">
-                    <div class="coveo-facet-header-title" role="heading" aria-level="2" aria-label="Product facet.">
+                    <div class="coveo-facet-header-title" >
                         分类
                     </div>
                 </div>

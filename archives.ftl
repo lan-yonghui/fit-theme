@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@layout title="归档 - ${blog_title!}">
+<@layout title="${blog_title!}">
 
 <#include "module/common-search.ftl">
 

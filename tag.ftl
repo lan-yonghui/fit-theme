@@ -1,6 +1,6 @@
 <#include "module/macro.ftl">
 
-<@layout title="标签: ${tag.name} - ${blog_title!}">
+<@layout title="${blog_title!}">
     <#include "module/common-search.ftl">
     <div class="content">
         <div class="siteforceSldsOneColLayout siteforceContentArea"
@@ -55,12 +55,12 @@
                                                                                         ${number.page!}
                                                                                     </a>
                                                                                 </li>
-                                                                                <#else>
-                                                                                    <li class="coveo-pager-list-item coveo-accessible-button">
-                                                                                        <a class="coveo-pager-list-item-text coveo-pager-anchor" nhref="${number.fullPath!}">
-                                                                                            ${number.page!}
-                                                                                        </a>
-                                                                                    </li>
+                                                                            <#else>
+                                                                                <li class="coveo-pager-list-item coveo-accessible-button">
+                                                                                    <a class="coveo-pager-list-item-text coveo-pager-anchor" href="${number.fullPath!}">
+                                                                                        ${number.page!}
+                                                                                    </a>
+                                                                                </li>
                                                                             </#if>
                                                                         </#list>
                                                                         <#if pagination.hasNext && (pagination.rainbowPages?size gt 0)>

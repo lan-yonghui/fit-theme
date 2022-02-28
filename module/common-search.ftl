@@ -1,8 +1,4 @@
-<script type="text/javascript">
-
-</script>
-
-<div class="">
+<div>
     <form class="joe_header__above-search" method="get" id="myForm" name=”form” action="${blog_url!}/search">
         <div data-region-name="search">
             <div data-priority="" class="ui-widget">
@@ -82,9 +78,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
-                                
                                 <div aria-live="polite" class="coveo-visible-to-screen-reader-only">
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 <#include "module/macro.ftl">
-<@layout title="友情链接 - ${blog_title!}">
+<@layout title="${blog_title!}">
     <h1>友情链接</h1>
     <ul>
         <@linkTag method="list">

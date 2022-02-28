@@ -13,20 +13,18 @@
        
         <#--  fit2cloud官网  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud.min.css"/>
-        <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-index.css"/>
+        <#--  <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-index.css"/>  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-style.css"/>
         <#--  fit2cloud官网  -->
-        <link rel="stylesheet" href="${theme_base!}/source/css/fit-onetrust.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/css/fit-header.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/css/fit-footer.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/css/fit-articles.css"/>
         <link rel="stylesheet" href="${theme_base!}/source/css/styles.css"/>
-        
         <link rel="stylesheet" href="${theme_base!}/source/css/fit-search.css"/>
         
         
         <link rel="stylesheet" href="${theme_base!}/source/css/app.css"/>
-        <link rel="stylesheet" href="${theme_base!}/source/css/CoveoFullSearch.css"/>
+        <#--  <link rel="stylesheet" href="${theme_base!}/source/css/search.css"/>  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/article-detail.css"/>
         <link rel="icon" href="${settings.favicon!}"/>   
         <title>${title}</title>
