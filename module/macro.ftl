@@ -13,7 +13,6 @@
        
         <#--  fit2cloud官网  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud.min.css"/>
-        <#--  <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-index.css"/>  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/fit2cloud-style.css"/>
         <#--  fit2cloud官网  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/fit-header.css"/>
@@ -24,7 +23,6 @@
         
         
         <link rel="stylesheet" href="${theme_base!}/source/css/app.css"/>
-        <#--  <link rel="stylesheet" href="${theme_base!}/source/css/search.css"/>  -->
         <link rel="stylesheet" href="${theme_base!}/source/css/article-detail.css"/>
         <link rel="icon" href="${settings.favicon!}"/>   
         <title>${title}</title>
@@ -37,7 +35,7 @@
             <#nested >
 
             <#--
-                公共底部代码，详情请参考：https://docs.halo.run/zh/developer-guide/theme/public-template-tag
+                公共底部代码，详情请参考：https://docs.halo.run/developer-guide/theme/public-template-tag
                 包含：统计代码，底部信息
             -->
 
