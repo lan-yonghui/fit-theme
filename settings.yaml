@@ -79,7 +79,7 @@ theme:
       type: select
       data-type: text
       default: index
-      description: "设置页脚内容具体来自哪里"
+      description: "设置首页页面具体来自哪里"
       options:
         - value: index
           label: 默认首页
