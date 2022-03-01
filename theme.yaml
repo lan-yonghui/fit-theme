@@ -1,8 +1,8 @@
 # 配置详情请参考：https://docs.halo.run/developer-guide/theme/config-files
 id: halo-theme-kbase
-name: FIT2CLOUD
+name: Knowledge Base
 author:
-  name: Knowledge Base
+  name: FIT2CLOUD
   website: https://halo.run
 description: Fit2cloud Knowledge Base
 logo: https://avatars.githubusercontent.com/u/48195280?s=200&v=4
