@@ -1,10 +1,9 @@
 <#include "module/macro.ftl">
 <@layout title="${post.title!} - ${blog_title!}">
 <#include "module/common-search.ftl">
-<style type="text/css">.cKM_ArticleThemeLayout,.cKM_ArticleThemeLayout #spinner{min-width:400px}.cKM_ArticleThemeLayout .alert-banner{padding-top:1rem}.cKM_ArticleThemeLayout:after{content:' ';top:0;bottom:0;right:0;left:0;background:#ffffff;position:absolute;z-index:-1}.cKM_ArticleThemeLayout .ui-widget{margin-bottom:0!important}.cKM_ArticleThemeLayout .mainContainer{height:75vh;display:flex;flex-direction:row;width:100%}.cKM_ArticleThemeLayout .outerContainer{display:flex;flex-direction:row;top:0;bottom:0;left:0;right:0}.cKM_ArticleThemeLayout .innerContainer{display:flex;flex-direction:column;height:100%;width:100%}.cKM_ArticleThemeLayout .headerLogo{width:300px;min-width:300px;float:left}.cKM_ArticleThemeLayout .headerLogo:after{content:' ';left:0;height:40px;background:#183a4b;position:absolute;width:1px}.cKM_ArticleThemeLayout .headerLine{content:' ';top:11px;left:300px;height:40px;background:rgba(255, 255, 255, 0.12);position:absolute;width:1px}.cKM_ArticleThemeLayout .profileMenu{color:#ffffff;line-height:16px;background-color:#002538;align-items:center;height:100%;display:flex;float:right;font-family:MetropolisRegular,Arial,Helvetica,sans-serif}.cKM_ArticleThemeLayout .navbar{background:#002538;width:100%;top:0;position:absolute;right:0;height:60px}.cKM_ArticleThemeLayout .navbar-right-section{justify-content:space-between;width:100%}.cKM_ArticleThemeLayout .navigation{color:#ffffff;font-size:14px;height:100%;align-items:center;padding-left:7px}.cKM_ArticleThemeLayout .navigation:before{content:' ';left:0;height:40px;background:#183a4b;position:absolute;width:1px}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation{background-color:transparent}.cKM_ArticleThemeLayout .comm-navigation .comm-navigation__list>.slds-list__item:first-child{display:none;visibility:hidden}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-p-horizontal--x-small{padding-top:1rem}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-list__item button{font-weight:400;font-size:.875rem;font-family:MetropolisRegular,Arial,Helvetica,sans-serif;line-height:normal;padding:8px 24px}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-list_horizontal>.slds-list__item>.slds-is-nested{background-color:#002538}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-is-fixed>.slds-list_vertical{background-color:#002538;width:250px}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-is-fixed>.slds-list_vertical>.slds-list__item>a{padding-top:12px;padding-bottom:12px}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-list__item a,.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-list__item button{text-transform:none}.cKM_ArticleThemeLayout .customSearch{margin-top:20px;padding:27px 0 1px 0}.cKM_ArticleThemeLayout .innerContainer article{flex:1 1 auto;overflow-y:auto;background:#ffffff;margin-top:36px;margin-left:6%;margin-right:6%}.cKM_ArticleThemeLayout .siteforceContentArea .comm-layout-column:not(:empty){padding-bottom:0!important;padding-top:0}.cKM_ArticleThemeLayout .innerContainer footer{background-color:#f2f2f2}.cKM_ArticleThemeLayout .slds-list__item{background:#002538}.cKM_ArticleThemeLayout .slds-p-right_medium{padding-right:1rem}.cKM_ArticleThemeLayout .slds-p-top_x-small{padding-top:16px}.cKM_ArticleThemeLayout .slds-truncate{font-family:MetropolisRegular,Arial,Helvetica,sans-serif;height:22px;font-size:14px;font-weight:400;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:normal;text-align:left;color:#ffffff}.cKM_ArticleThemeLayout .slds-container_fluid{font-family:MetropolisRegular,Arial,Helvetica,sans-serif}.cKM_ArticleThemeLayout.mainContHeaderCSS .navbar,.cKM_ArticleThemeLayout.mainContHeaderCSS .profileMenu,.cKM_ArticleThemeLayout.mainContHeaderCSS .slds-list__item{background:#003d79}@media only screen and (min-device-width:320px) and (max-device-width:767px){.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-p-horizontal--x-small{float:left}.cKM_ArticleThemeLayout .forceCommunityGlobalNavigation .slds-p-vertical--xx-small{padding:0 0 0 5px}.cKM_ArticleThemeLayout .navigation{padding-left:0}.cKM_ArticleThemeLayout .headerLine{display:none}.cKM_ArticleThemeLayout .profileMenu{word-break:break-word}.cKM_ArticleThemeLayout .customSearch{padding:20px 0 0 0}.cKM_ArticleThemeLayout .innerContainer footer{background-color:#f2f2f2}.cKM_ArticleThemeLayout #articleContent h1.slds-page-header__title{display:inline;overflow-wrap:break-word}.cKM_ArticleThemeLayout #contentSidebar .articleInfo{margin-left:0}.cKM_ArticleThemeLayout iframe{width:-webkit-fill-available;height:auto!important}}@media only screen and (max-device-width:1023px){.cKM_ArticleThemeLayout iframe{width:-webkit-fill-available;height:300px}.cKM_ArticleThemeLayout #articleContent tbody{display:block;overflow-x:auto}.cKM_ArticleThemeLayout #articleContent h1.slds-page-header__title{display:block;overflow-wrap:break-word}}@media only screen and (min-device-width:1024px){.cKM_ArticleThemeLayout #articleContent h1.slds-page-header__title{display:block;overflow-wrap:break-word}}@media only screen and (min-device-width:768px) and (max-device-width:1026px){.cKM_ArticleThemeLayout #contentSidebar .articleInfo{max-width:318px}.cKM_ArticleThemeLayout iframe{width:-webkit-fill-available;height:300px}}@media only screen and (max-device-width:1024px){.cKM_ArticleThemeLayout #rightSideContent.slds-grid_align-end{justify-content:unset}}.cKM_ArticleThemeLayout .articleInfoContent .slds-select_container:before{display:none}.cKM_ArticleThemeLayout .articleInfoContent .slds-select_container:after{border:solid #9a9a9a;border-width:0 1px 1px 0;padding:3px;transform:rotate(45deg);bottom:calc(1.75rem / 2);pointer-events:none}.cKM_ArticleThemeLayout .articleInfoContent{font-size:12px;font-weight:normal;line-height:1.5;letter-spacing:normal;color:#000000}.cKM_ArticleThemeLayout .articleInfoSecContent{display:flex;justify-content:space-between}.cKM_ArticleThemeLayout .articleInfoText{display:flex}.cKM_ArticleThemeLayout .articleInfoContent .slds-select{border-right:none;border-left:none;border-top:none;border-radius:.1rem;height:1.5rem}.cKM_ArticleThemeLayout .articleInfoContent .slds-form-element label{display:none}.cKM_ArticleThemeLayout .sub-header{font-style:normal;font-stretch:normal;line-height:1.5;letter-spacing:normal;color:#000000;font-size:.75rem}@media only screen and (max-device-width:1024px){.cKM_ArticleThemeLayout #rightSideContent .slds-grid_align-end{justify-content:unset}.cKM_ArticleThemeLayout #rightSideContent{padding-top:.75rem}}.cKM_ArticleThemeLayout .search{margin-top:60px}.cKM_ArticleThemeLayout #content{padding-bottom:2.5rem}.cKM_ArticleThemeLayout #footer{bottom:0;width:100%}.cKM_ArticleThemeLayout article{flex:1 1 auto;overflow-y:auto;background:#ffffff;margin-top:36px;margin-left:6%;margin-right:6%}</style>
-<div class="content" data-aura-rendered-by="214:0">
-	<div id="spinner" class="slds-hide" data-aura-rendered-by="215:0">
-		<lightning-spinner data-aura-rendered-by="216:0" class="slds-spinner_container">
+<div class="content">
+	<div id="spinner" class="slds-hide">
+		<lightning-spinner class="slds-spinner_container">
 			<div role="status" class="slds-spinner slds-spinner_small">
 				<span class="slds-assistive-text">
 					Loading
@@ -16,10 +15,9 @@
 			</div>
 		</lightning-spinner>
 	</div>
-	<article data-region-name="content" id="content" class="" data-aura-rendered-by="217:0">
-    <div id="contentContainer" class="slds-grid slds-wrap slds-medium-nowrap slds-large-nowrap"
-		data-aura-rendered-by="218:0">
-			<div id="contentMain" class="slds-col--padded slds-size--12-of-12 slds-medium-size--8-of-12 slds-large-size--8-of-12 comm-layout-column">
+	<article data-region-name="content" id="content" class="">
+    <div id="contentContainer" class="slds-grid slds-wrap slds-medium-nowrap slds-large-nowrap">
+			<div id="contentMain" class="markdown-body slds-col--padded slds-size--12-of-12 slds-medium-size--8-of-12 slds-large-size--8-of-12 comm-layout-column">
 				<div id="articleContent">
 					<div style="padding-bottom: 10px; padding-top: 10px" id="divLogo" class="visible-print">
                         <div class="slds-grid slds-wrap">
@@ -32,13 +30,12 @@
                             </div>
                         </div>
                     </div>
-                    <div id="article_content">
+                    <div id="article_content" >
                         <div class="container">
                                 
                             <h1 id="heading" class="article_title slds-wrap slds-page-header__title slds-align-middle">
                                 <a class="post-title-link" href="${post.fullPath}"itemprop="url">${post.title}</a>
                             </h1>
-                            <hr style="border-color: #dddddd; margin-top: 1rem" class="slds-p-bottom_xx-small">
                             <div class="slds-grid slds-wrap slds-is-relative">
                                 <span class="slds-col slds-grid slds-wrap sub-header slds-p-right_medium">
                                     <span class="slds-p-right_large">
@@ -50,9 +47,6 @@
                                     </span>  
                                     <span class="slds-p-right_large">
                                         <#if post.tags?size gt 0>
-                                            <#--  <b>
-                                                标签
-                                            </b>  -->
                                             <#list post.tags as tag>
                                                 <#if tag?index lt 10>
                                                 <span>
@@ -127,8 +121,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="contentSidebar" class="slds-col--padded slds-size--12-of-12 slds-medium-size--4-of-12 slds-large-size--4-of-12 comm-layout-column"
-			data-aura-rendered-by="301:0">
+			<div id="contentSidebar" class="slds-col--padded slds-size--12-of-12 slds-medium-size--4-of-12 slds-large-size--4-of-12 comm-layout-column">
 
 				<div id="sidebarSection1">
 					<div class="relatedResources cAdditionalResources">
@@ -139,38 +132,37 @@
 
 							<div class="CoveoV2SearchUI">
 							</div>
-							<div data-aura-rendered-by="694:0" class="CoveoV2SearchUI" data-aura-class="CoveoV2SearchUI">
-                <div id="search" class="CoveoSearchInterface white CoveoUserProfileModel Coveostate CoveoComponentState CoveoComponentOptions CoveoQueryController CoveoHistoryController coveo-after-initialization CoveoDebug"
-                data-enable-history="true" data-design="new" style="display: block;">
-                  <div class="CoveoAnalytics">
-                  </div>
-                  <div class="CoveoCommunityStateManager">
-                  </div>
-                  <div class="CoveoRecommendationPadding" data-recommendation="additionalResources">
-                  </div>
-                  <div class="coveo-results-column">
-                    <div class="CoveoErrorReport" aria-hidden="true" style="display: none;">
-                      <div class="coveo-error-report-container">
-                        <div class="coveo-error-report-title">
-                        </div>
-                        <div class="coveo-error-report-message">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="CoveoTriggers">
-                    </div>
-                    <div class="CoveoResultList" data-layout="list" data-wait-animation="none"
-                    data-auto-select-fields-to-include="false">
-                      <div class="coveo-result-list-container coveo-list-layout-container" id="coveo-result-list-container">
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div aria-live="polite" class="coveo-visible-to-screen-reader-only">
-                    Results 1-2 of 2
-                  </div>
-                </div>
-              </div>
+							<div  class="CoveoV2SearchUI" data-aura-class="CoveoV2SearchUI">
+                                <div id="search" class="CoveoSearchInterface white CoveoUserProfileModel Coveostate CoveoComponentState CoveoComponentOptions CoveoQueryController CoveoHistoryController coveo-after-initialization CoveoDebug"
+                                data-enable-history="true" data-design="new" style="display: block;">
+                                <div class="CoveoAnalytics">
+                                </div>
+                                <div class="CoveoCommunityStateManager">
+                                </div>
+                                <div class="CoveoRecommendationPadding" data-recommendation="additionalResources">
+                                </div>
+                                <div class="coveo-results-column">
+                                    <div class="CoveoErrorReport" aria-hidden="true" style="display: none;">
+                                    <div class="coveo-error-report-container">
+                                        <div class="coveo-error-report-title">
+                                        </div>
+                                        <div class="coveo-error-report-message">
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="CoveoTriggers">
+                                    </div>
+                                    <div class="CoveoResultList" data-layout="list" data-wait-animation="none"
+                                    data-auto-select-fields-to-include="false">
+                                    <div class="coveo-result-list-container coveo-list-layout-container" id="coveo-result-list-container">
+                                        
+                                    </div>
+                                    </div>
+                                </div>
+                                <div aria-live="polite" class="coveo-visible-to-screen-reader-only">
+                                </div>
+                                </div>
+                            </div>
 
 							
 						</div>
@@ -235,16 +227,8 @@ function loadOtherArticle() {
     var keyword = localStorage.getItem("keyword");
     var cate = "${(post.categories[0].id)!''}";
     var tag = "${(post.tags[0].slug)!''}";
-    if(keyword){
-      this.getArticle("/api/content/posts", "get", {"keyword":keyword, "size":5});
-    }else if(cate){
-      this.getArticle("/api/content/posts", "get", {"categoryId":cate, "size":5});
-    }else if(tag){
-      this.getArticle("/api/content/tags/"+tag+"/posts", "get", {"size":5});
-    }else{
-      this.getArticle("/api/content/posts/latest", "get", {"size":5});
-    }
-
+   
+this.getArticle("/api/content/posts", "get", {"size":5});
 }
 function getArticle(url, type, data){
   $.ajax({
