@@ -676,7 +676,7 @@
 
 .cCommunitySearchboxExternal:not(.redesigned-searchbox) .CustomSearchButton:before,
 .cCommunitySearchboxExternal:not(.redesigned-searchbox) .CoveoSearchButton:before {
-    content: "Search"
+    content: "搜索"
 }
 
 .cCommunitySearchboxExternal:not(.redesigned-searchbox) .CustomSearchButton:hover,
@@ -10465,7 +10465,7 @@ select.coveo-dropdown::-ms-expand {
 }
 
 .CoveoSearchButton:before {
-    content: '搜索';
+    content: '';
     vertical-align: middle;
     height: 100%;
     display: inline-block;
