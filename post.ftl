@@ -227,8 +227,16 @@ function loadOtherArticle() {
     var keyword = localStorage.getItem("keyword");
     var cate = "${(post.categories[0].id)!''}";
     var tag = "${(post.tags[0].slug)!''}";
-   
-this.getArticle("/api/content/posts", "get", {"size":5});
+
+    if(keyword){
+      this.getArticle("/api/content/posts", "get", {"keyword":keyword, "size":5});
+    }else if(cate){
+      this.getArticle("/api/content/posts", "get", {"categoryId":cate, "size":5});
+    }else if(tag){
+      this.getArticle("/api/content/tags/"+tag+"/posts", "get", {"size":5});
+    }else{
+      this.getArticle("/api/content/posts", "get", {"size":5});
+    }
 }
 function getArticle(url, type, data){
   $.ajax({
